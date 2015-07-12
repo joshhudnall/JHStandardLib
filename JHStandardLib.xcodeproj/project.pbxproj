@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEB28C841B521CA900098654 /* JHStandardLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BEB28C831B521CA900098654 /* JHStandardLib.h */; };
+		BEB28C861B521CA900098654 /* JHStandardLib.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28C851B521CA900098654 /* JHStandardLib.m */; };
+		BEB28C8C1B521CA900098654 /* libJHStandardLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB28C801B521CA900098654 /* libJHStandardLib.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEB28C8D1B521CA900098654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEB28C781B521CA900098654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEB28C7F1B521CA900098654;
+			remoteInfo = JHStandardLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BEB28C7E1B521CA900098654 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				BEB28C841B521CA900098654 /* JHStandardLib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BEB28C801B521CA900098654 /* libJHStandardLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJHStandardLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB28C831B521CA900098654 /* JHStandardLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHStandardLib.h; sourceTree = "<group>"; };
+		BEB28C851B521CA900098654 /* JHStandardLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHStandardLib.m; sourceTree = "<group>"; };
+		BEB28C8B1B521CA900098654 /* JHStandardLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHStandardLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB28C911B521CA900098654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEB28C7D1B521CA900098654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB28C881B521CA900098654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB28C8C1B521CA900098654 /* libJHStandardLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEB28C771B521CA900098654 = {
+			isa = PBXGroup;
+			children = (
+				BEB28C821B521CA900098654 /* JHStandardLib */,
+				BEB28C8F1B521CA900098654 /* JHStandardLibTests */,
+				BEB28C811B521CA900098654 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEB28C811B521CA900098654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEB28C801B521CA900098654 /* libJHStandardLib.a */,
+				BEB28C8B1B521CA900098654 /* JHStandardLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEB28C821B521CA900098654 /* JHStandardLib */ = {
+			isa = PBXGroup;
+			children = (
+				BEB28C831B521CA900098654 /* JHStandardLib.h */,
+				BEB28C851B521CA900098654 /* JHStandardLib.m */,
+			);
+			path = JHStandardLib;
+			sourceTree = "<group>";
+		};
+		BEB28C8F1B521CA900098654 /* JHStandardLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEB28C901B521CA900098654 /* Supporting Files */,
+			);
+			path = JHStandardLibTests;
+			sourceTree = "<group>";
+		};
+		BEB28C901B521CA900098654 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEB28C911B521CA900098654 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEB28C7F1B521CA900098654 /* JHStandardLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEB28C941B521CA900098654 /* Build configuration list for PBXNativeTarget "JHStandardLib" */;
+			buildPhases = (
+				BEB28C7C1B521CA900098654 /* Sources */,
+				BEB28C7D1B521CA900098654 /* Frameworks */,
+				BEB28C7E1B521CA900098654 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JHStandardLib;
+			productName = JHStandardLib;
+			productReference = BEB28C801B521CA900098654 /* libJHStandardLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BEB28C8A1B521CA900098654 /* JHStandardLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEB28C971B521CA900098654 /* Build configuration list for PBXNativeTarget "JHStandardLibTests" */;
+			buildPhases = (
+				BEB28C871B521CA900098654 /* Sources */,
+				BEB28C881B521CA900098654 /* Frameworks */,
+				BEB28C891B521CA900098654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEB28C8E1B521CA900098654 /* PBXTargetDependency */,
+			);
+			name = JHStandardLibTests;
+			productName = JHStandardLibTests;
+			productReference = BEB28C8B1B521CA900098654 /* JHStandardLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEB28C781B521CA900098654 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Josh Hudnall";
+				TargetAttributes = {
+					BEB28C7F1B521CA900098654 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					BEB28C8A1B521CA900098654 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = BEB28C7B1B521CA900098654 /* Build configuration list for PBXProject "JHStandardLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BEB28C771B521CA900098654;
+			productRefGroup = BEB28C811B521CA900098654 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEB28C7F1B521CA900098654 /* JHStandardLib */,
+				BEB28C8A1B521CA900098654 /* JHStandardLibTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEB28C891B521CA900098654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEB28C7C1B521CA900098654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB28C861B521CA900098654 /* JHStandardLib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB28C871B521CA900098654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEB28C8E1B521CA900098654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEB28C7F1B521CA900098654 /* JHStandardLib */;
+			targetProxy = BEB28C8D1B521CA900098654 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BEB28C921B521CA900098654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BEB28C931B521CA900098654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEB28C951B521CA900098654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BEB28C961B521CA900098654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BEB28C981B521CA900098654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JHStandardLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BEB28C991B521CA900098654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JHStandardLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEB28C7B1B521CA900098654 /* Build configuration list for PBXProject "JHStandardLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEB28C921B521CA900098654 /* Debug */,
+				BEB28C931B521CA900098654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEB28C941B521CA900098654 /* Build configuration list for PBXNativeTarget "JHStandardLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEB28C951B521CA900098654 /* Debug */,
+				BEB28C961B521CA900098654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEB28C971B521CA900098654 /* Build configuration list for PBXNativeTarget "JHStandardLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEB28C981B521CA900098654 /* Debug */,
+				BEB28C991B521CA900098654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEB28C781B521CA900098654 /* Project object */;
+}
