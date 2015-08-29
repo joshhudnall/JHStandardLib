@@ -7,9 +7,142 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BEB28C841B521CA900098654 /* JHStandardLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BEB28C831B521CA900098654 /* JHStandardLib.h */; };
-		BEB28C861B521CA900098654 /* JHStandardLib.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28C851B521CA900098654 /* JHStandardLib.m */; };
+		BE4BD7E61B66BCD3009919FF /* AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4BD7E51B66BCD3009919FF /* AutoCoding.m */; };
+		BE4BD7E81B66BCF6009919FF /* AutoCoding.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BE4BD7E41B66BCD3009919FF /* AutoCoding.h */; };
+		BE4BD7F41B66BDDB009919FF /* TMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4BD7EE1B66BDDB009919FF /* TMCache.m */; };
+		BE4BD7F51B66BDDB009919FF /* TMDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4BD7F11B66BDDB009919FF /* TMDiskCache.m */; };
+		BE4BD7F61B66BDDB009919FF /* TMMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4BD7F31B66BDDB009919FF /* TMMemoryCache.m */; };
 		BEB28C8C1B521CA900098654 /* libJHStandardLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB28C801B521CA900098654 /* libJHStandardLib.a */; };
+		BEB28D6C1B521E2600098654 /* NSAttributedString+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D231B521E2600098654 /* NSAttributedString+JHExtras.m */; };
+		BEB28D6D1B521E2600098654 /* NSAttributedString+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D231B521E2600098654 /* NSAttributedString+JHExtras.m */; };
+		BEB28D6E1B521E2600098654 /* NSDate+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D251B521E2600098654 /* NSDate+JHExtras.m */; };
+		BEB28D6F1B521E2600098654 /* NSDate+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D251B521E2600098654 /* NSDate+JHExtras.m */; };
+		BEB28D701B521E2600098654 /* NSMutableArray+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D271B521E2600098654 /* NSMutableArray+JHExtras.m */; };
+		BEB28D711B521E2600098654 /* NSMutableArray+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D271B521E2600098654 /* NSMutableArray+JHExtras.m */; };
+		BEB28D721B521E2600098654 /* NSObject+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D291B521E2600098654 /* NSObject+JHExtras.m */; };
+		BEB28D731B521E2600098654 /* NSObject+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D291B521E2600098654 /* NSObject+JHExtras.m */; };
+		BEB28D741B521E2600098654 /* NSString+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D2B1B521E2600098654 /* NSString+JHExtras.m */; };
+		BEB28D751B521E2600098654 /* NSString+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D2B1B521E2600098654 /* NSString+JHExtras.m */; };
+		BEB28D761B521E2600098654 /* NSUserDefaults+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D2D1B521E2600098654 /* NSUserDefaults+JHExtras.m */; };
+		BEB28D771B521E2600098654 /* NSUserDefaults+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D2D1B521E2600098654 /* NSUserDefaults+JHExtras.m */; };
+		BEB28D781B521E2600098654 /* UIApplication+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D2F1B521E2600098654 /* UIApplication+JHExtras.m */; };
+		BEB28D791B521E2600098654 /* UIApplication+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D2F1B521E2600098654 /* UIApplication+JHExtras.m */; };
+		BEB28D7A1B521E2600098654 /* UIBarButtonItem+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D311B521E2600098654 /* UIBarButtonItem+JHExtras.m */; };
+		BEB28D7B1B521E2600098654 /* UIBarButtonItem+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D311B521E2600098654 /* UIBarButtonItem+JHExtras.m */; };
+		BEB28D7C1B521E2600098654 /* UIButton+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D331B521E2600098654 /* UIButton+JHExtras.m */; };
+		BEB28D7D1B521E2600098654 /* UIButton+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D331B521E2600098654 /* UIButton+JHExtras.m */; };
+		BEB28D7E1B521E2600098654 /* UICollectionView+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D351B521E2600098654 /* UICollectionView+JHExtras.m */; };
+		BEB28D7F1B521E2600098654 /* UICollectionView+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D351B521E2600098654 /* UICollectionView+JHExtras.m */; };
+		BEB28D801B521E2600098654 /* UICollectionViewCell+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D371B521E2600098654 /* UICollectionViewCell+JHExtras.m */; };
+		BEB28D811B521E2600098654 /* UICollectionViewCell+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D371B521E2600098654 /* UICollectionViewCell+JHExtras.m */; };
+		BEB28D821B521E2600098654 /* UIColor+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D391B521E2600098654 /* UIColor+JHExtras.m */; };
+		BEB28D831B521E2600098654 /* UIColor+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D391B521E2600098654 /* UIColor+JHExtras.m */; };
+		BEB28D841B521E2600098654 /* UIImage+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D3B1B521E2600098654 /* UIImage+JHExtras.m */; };
+		BEB28D851B521E2600098654 /* UIImage+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D3B1B521E2600098654 /* UIImage+JHExtras.m */; };
+		BEB28D881B521E2600098654 /* UITableView+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D3F1B521E2600098654 /* UITableView+JHExtras.m */; };
+		BEB28D891B521E2600098654 /* UITableView+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D3F1B521E2600098654 /* UITableView+JHExtras.m */; };
+		BEB28D8A1B521E2600098654 /* UITableViewCell+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D411B521E2600098654 /* UITableViewCell+JHExtras.m */; };
+		BEB28D8B1B521E2600098654 /* UITableViewCell+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D411B521E2600098654 /* UITableViewCell+JHExtras.m */; };
+		BEB28D8C1B521E2600098654 /* UIView+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D431B521E2600098654 /* UIView+JHExtras.m */; };
+		BEB28D8D1B521E2600098654 /* UIView+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D431B521E2600098654 /* UIView+JHExtras.m */; };
+		BEB28D8E1B521E2600098654 /* JHFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D461B521E2600098654 /* JHFormCell.m */; };
+		BEB28D8F1B521E2600098654 /* JHFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D461B521E2600098654 /* JHFormCell.m */; };
+		BEB28D901B521E2600098654 /* JHFormDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D481B521E2600098654 /* JHFormDateCell.m */; };
+		BEB28D911B521E2600098654 /* JHFormDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D481B521E2600098654 /* JHFormDateCell.m */; };
+		BEB28D921B521E2600098654 /* JHFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D4A1B521E2600098654 /* JHFormField.m */; };
+		BEB28D931B521E2600098654 /* JHFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D4A1B521E2600098654 /* JHFormField.m */; };
+		BEB28D941B521E2600098654 /* JHFormOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D4C1B521E2600098654 /* JHFormOptionsCell.m */; };
+		BEB28D951B521E2600098654 /* JHFormOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D4C1B521E2600098654 /* JHFormOptionsCell.m */; };
+		BEB28D961B521E2600098654 /* JHFormSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D4E1B521E2600098654 /* JHFormSwitchCell.m */; };
+		BEB28D971B521E2600098654 /* JHFormSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D4E1B521E2600098654 /* JHFormSwitchCell.m */; };
+		BEB28D981B521E2600098654 /* JHFormTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D501B521E2600098654 /* JHFormTextCell.m */; };
+		BEB28D991B521E2600098654 /* JHFormTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D501B521E2600098654 /* JHFormTextCell.m */; };
+		BEB28D9A1B521E2600098654 /* JHFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D521B521E2600098654 /* JHFormViewController.m */; };
+		BEB28D9B1B521E2600098654 /* JHFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D521B521E2600098654 /* JHFormViewController.m */; };
+		BEB28D9C1B521E2600098654 /* JHMath.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D551B521E2600098654 /* JHMath.m */; };
+		BEB28D9D1B521E2600098654 /* JHMath.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D551B521E2600098654 /* JHMath.m */; };
+		BEB28D9E1B521E2600098654 /* JHSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D591B521E2600098654 /* JHSwitchCell.m */; };
+		BEB28D9F1B521E2600098654 /* JHSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D591B521E2600098654 /* JHSwitchCell.m */; };
+		BEB28DA01B521E2600098654 /* JHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D5C1B521E2600098654 /* JHCollectionViewController.m */; };
+		BEB28DA11B521E2600098654 /* JHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D5C1B521E2600098654 /* JHCollectionViewController.m */; };
+		BEB28DA21B521E2600098654 /* JHMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D5E1B521E2600098654 /* JHMoviePlayerViewController.m */; };
+		BEB28DA31B521E2600098654 /* JHMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D5E1B521E2600098654 /* JHMoviePlayerViewController.m */; };
+		BEB28DA61B521E2600098654 /* JHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D621B521E2600098654 /* JHTableViewController.m */; };
+		BEB28DA71B521E2600098654 /* JHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D621B521E2600098654 /* JHTableViewController.m */; };
+		BEB28DA81B521E2600098654 /* JHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D641B521E2600098654 /* JHViewController.m */; };
+		BEB28DA91B521E2600098654 /* JHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D641B521E2600098654 /* JHViewController.m */; };
+		BEB28DAA1B521E2600098654 /* PRPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D661B521E2600098654 /* PRPAlertView.m */; };
+		BEB28DAB1B521E2600098654 /* PRPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D661B521E2600098654 /* PRPAlertView.m */; };
+		BEB28DAC1B521E2600098654 /* JHBeSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D691B521E2600098654 /* JHBeSocial.m */; };
+		BEB28DAD1B521E2600098654 /* JHBeSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D691B521E2600098654 /* JHBeSocial.m */; };
+		BEB28DAE1B521E2600098654 /* JHSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D6B1B521E2600098654 /* JHSingleton.m */; };
+		BEB28DAF1B521E2600098654 /* JHSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D6B1B521E2600098654 /* JHSingleton.m */; };
+		BEB28DC01B52214E00098654 /* JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D211B521E2600098654 /* JHExtras.h */; };
+		BEB28DC11B52214E00098654 /* NSAttributedString+JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D221B521E2600098654 /* NSAttributedString+JHExtras.h */; };
+		BEB28DC21B52214E00098654 /* NSAttributedString+JHExtras.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D231B521E2600098654 /* NSAttributedString+JHExtras.m */; };
+		BEB28DC31B52214E00098654 /* NSDate+JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D241B521E2600098654 /* NSDate+JHExtras.h */; };
+		BEB28DC41B52214E00098654 /* NSDate+JHExtras.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D251B521E2600098654 /* NSDate+JHExtras.m */; };
+		BEB28DC51B52214E00098654 /* NSMutableArray+JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D261B521E2600098654 /* NSMutableArray+JHExtras.h */; };
+		BEB28DC61B52214E00098654 /* NSMutableArray+JHExtras.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D271B521E2600098654 /* NSMutableArray+JHExtras.m */; };
+		BEB28DC71B52214E00098654 /* NSObject+JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D281B521E2600098654 /* NSObject+JHExtras.h */; };
+		BEB28DC81B52214E00098654 /* NSObject+JHExtras.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D291B521E2600098654 /* NSObject+JHExtras.m */; };
+		BEB28DC91B52214E00098654 /* NSString+JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D2A1B521E2600098654 /* NSString+JHExtras.h */; };
+		BEB28DCA1B52214E00098654 /* NSString+JHExtras.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D2B1B521E2600098654 /* NSString+JHExtras.m */; };
+		BEB28DCB1B52214E00098654 /* NSUserDefaults+JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D2C1B521E2600098654 /* NSUserDefaults+JHExtras.h */; };
+		BEB28DCC1B52214E00098654 /* NSUserDefaults+JHExtras.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D2D1B521E2600098654 /* NSUserDefaults+JHExtras.m */; };
+		BEB28DCD1B52214E00098654 /* UIApplication+JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D2E1B521E2600098654 /* UIApplication+JHExtras.h */; };
+		BEB28DCE1B52214E00098654 /* UIApplication+JHExtras.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D2F1B521E2600098654 /* UIApplication+JHExtras.m */; };
+		BEB28DCF1B52214E00098654 /* UIBarButtonItem+JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D301B521E2600098654 /* UIBarButtonItem+JHExtras.h */; };
+		BEB28DD01B52214E00098654 /* UIBarButtonItem+JHExtras.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D311B521E2600098654 /* UIBarButtonItem+JHExtras.m */; };
+		BEB28DD11B52214E00098654 /* UIButton+JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D321B521E2600098654 /* UIButton+JHExtras.h */; };
+		BEB28DD21B52214E00098654 /* UIButton+JHExtras.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D331B521E2600098654 /* UIButton+JHExtras.m */; };
+		BEB28DD31B52214E00098654 /* UICollectionView+JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D341B521E2600098654 /* UICollectionView+JHExtras.h */; };
+		BEB28DD41B52214E00098654 /* UICollectionView+JHExtras.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D351B521E2600098654 /* UICollectionView+JHExtras.m */; };
+		BEB28DD51B52214E00098654 /* UICollectionViewCell+JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D361B521E2600098654 /* UICollectionViewCell+JHExtras.h */; };
+		BEB28DD61B52214E00098654 /* UICollectionViewCell+JHExtras.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D371B521E2600098654 /* UICollectionViewCell+JHExtras.m */; };
+		BEB28DD71B52214E00098654 /* UIColor+JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D381B521E2600098654 /* UIColor+JHExtras.h */; };
+		BEB28DD81B52214E00098654 /* UIColor+JHExtras.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D391B521E2600098654 /* UIColor+JHExtras.m */; };
+		BEB28DD91B52214E00098654 /* UIImage+JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D3A1B521E2600098654 /* UIImage+JHExtras.h */; };
+		BEB28DDA1B52214E00098654 /* UIImage+JHExtras.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D3B1B521E2600098654 /* UIImage+JHExtras.m */; };
+		BEB28DDB1B52214E00098654 /* UITableView+JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D3E1B521E2600098654 /* UITableView+JHExtras.h */; };
+		BEB28DDC1B52214E00098654 /* UITableView+JHExtras.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D3F1B521E2600098654 /* UITableView+JHExtras.m */; };
+		BEB28DDD1B52214E00098654 /* UITableViewCell+JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D401B521E2600098654 /* UITableViewCell+JHExtras.h */; };
+		BEB28DDE1B52214E00098654 /* UITableViewCell+JHExtras.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D411B521E2600098654 /* UITableViewCell+JHExtras.m */; };
+		BEB28DDF1B52214E00098654 /* UIView+JHExtras.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D421B521E2600098654 /* UIView+JHExtras.h */; };
+		BEB28DE01B52214E00098654 /* UIView+JHExtras.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D431B521E2600098654 /* UIView+JHExtras.m */; };
+		BEB28DE11B52214E00098654 /* JHFormCell.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D451B521E2600098654 /* JHFormCell.h */; };
+		BEB28DE21B52214E00098654 /* JHFormCell.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D461B521E2600098654 /* JHFormCell.m */; };
+		BEB28DE31B52214E00098654 /* JHFormDateCell.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D471B521E2600098654 /* JHFormDateCell.h */; };
+		BEB28DE41B52214E00098654 /* JHFormDateCell.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D481B521E2600098654 /* JHFormDateCell.m */; };
+		BEB28DE51B52214E00098654 /* JHFormField.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D491B521E2600098654 /* JHFormField.h */; };
+		BEB28DE61B52214E00098654 /* JHFormField.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D4A1B521E2600098654 /* JHFormField.m */; };
+		BEB28DE71B52214E00098654 /* JHFormOptionsCell.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D4B1B521E2600098654 /* JHFormOptionsCell.h */; };
+		BEB28DE81B52214E00098654 /* JHFormOptionsCell.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D4C1B521E2600098654 /* JHFormOptionsCell.m */; };
+		BEB28DE91B52214E00098654 /* JHFormSwitchCell.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D4D1B521E2600098654 /* JHFormSwitchCell.h */; };
+		BEB28DEA1B52214E00098654 /* JHFormSwitchCell.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D4E1B521E2600098654 /* JHFormSwitchCell.m */; };
+		BEB28DEB1B52214E00098654 /* JHFormTextCell.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D4F1B521E2600098654 /* JHFormTextCell.h */; };
+		BEB28DEC1B52214E00098654 /* JHFormTextCell.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D501B521E2600098654 /* JHFormTextCell.m */; };
+		BEB28DED1B52214E00098654 /* JHFormViewController.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D511B521E2600098654 /* JHFormViewController.h */; };
+		BEB28DEE1B52214E00098654 /* JHFormViewController.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D521B521E2600098654 /* JHFormViewController.m */; };
+		BEB28DEF1B52214E00098654 /* JHMath.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D541B521E2600098654 /* JHMath.h */; };
+		BEB28DF01B52214E00098654 /* JHMath.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D551B521E2600098654 /* JHMath.m */; };
+		BEB28DF11B52214E00098654 /* JHiOSAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D561B521E2600098654 /* JHiOSAdditions.h */; };
+		BEB28DF21B52214E00098654 /* JHSwitchCell.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D581B521E2600098654 /* JHSwitchCell.h */; };
+		BEB28DF31B52214E00098654 /* JHSwitchCell.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D591B521E2600098654 /* JHSwitchCell.m */; };
+		BEB28DF41B52214E00098654 /* JHCollectionViewController.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D5B1B521E2600098654 /* JHCollectionViewController.h */; };
+		BEB28DF51B52214E00098654 /* JHCollectionViewController.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D5C1B521E2600098654 /* JHCollectionViewController.m */; };
+		BEB28DF61B52214E00098654 /* JHMoviePlayerViewController.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D5D1B521E2600098654 /* JHMoviePlayerViewController.h */; };
+		BEB28DF71B52214E00098654 /* JHMoviePlayerViewController.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D5E1B521E2600098654 /* JHMoviePlayerViewController.m */; };
+		BEB28DFA1B52214E00098654 /* JHTableViewController.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D611B521E2600098654 /* JHTableViewController.h */; };
+		BEB28DFB1B52214E00098654 /* JHTableViewController.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D621B521E2600098654 /* JHTableViewController.m */; };
+		BEB28DFC1B52214E00098654 /* JHViewController.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D631B521E2600098654 /* JHViewController.h */; };
+		BEB28DFD1B52214E00098654 /* JHViewController.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D641B521E2600098654 /* JHViewController.m */; };
+		BEB28DFE1B52214E00098654 /* PRPAlertView.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D651B521E2600098654 /* PRPAlertView.h */; };
+		BEB28DFF1B52214E00098654 /* PRPAlertView.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D661B521E2600098654 /* PRPAlertView.m */; };
+		BEB28E001B52214E00098654 /* JHBeSocial.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D681B521E2600098654 /* JHBeSocial.h */; };
+		BEB28E011B52214F00098654 /* JHBeSocial.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D691B521E2600098654 /* JHBeSocial.m */; };
+		BEB28E021B52214F00098654 /* JHSingleton.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D6A1B521E2600098654 /* JHSingleton.h */; };
+		BEB28E031B52214F00098654 /* JHSingleton.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D6B1B521E2600098654 /* JHSingleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,24 +156,166 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BEB28C7E1B521CA900098654 /* CopyFiles */ = {
+		BEB28C7E1B521CA900098654 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				BEB28C841B521CA900098654 /* JHStandardLib.h in CopyFiles */,
+				BE4BD7E81B66BCF6009919FF /* AutoCoding.h in Copy Files */,
+				BEB28DC01B52214E00098654 /* JHExtras.h in Copy Files */,
+				BEB28DC11B52214E00098654 /* NSAttributedString+JHExtras.h in Copy Files */,
+				BEB28DC21B52214E00098654 /* NSAttributedString+JHExtras.m in Copy Files */,
+				BEB28DC31B52214E00098654 /* NSDate+JHExtras.h in Copy Files */,
+				BEB28DC41B52214E00098654 /* NSDate+JHExtras.m in Copy Files */,
+				BEB28DC51B52214E00098654 /* NSMutableArray+JHExtras.h in Copy Files */,
+				BEB28DC61B52214E00098654 /* NSMutableArray+JHExtras.m in Copy Files */,
+				BEB28DC71B52214E00098654 /* NSObject+JHExtras.h in Copy Files */,
+				BEB28DC81B52214E00098654 /* NSObject+JHExtras.m in Copy Files */,
+				BEB28DC91B52214E00098654 /* NSString+JHExtras.h in Copy Files */,
+				BEB28DCA1B52214E00098654 /* NSString+JHExtras.m in Copy Files */,
+				BEB28DCB1B52214E00098654 /* NSUserDefaults+JHExtras.h in Copy Files */,
+				BEB28DCC1B52214E00098654 /* NSUserDefaults+JHExtras.m in Copy Files */,
+				BEB28DCD1B52214E00098654 /* UIApplication+JHExtras.h in Copy Files */,
+				BEB28DCE1B52214E00098654 /* UIApplication+JHExtras.m in Copy Files */,
+				BEB28DCF1B52214E00098654 /* UIBarButtonItem+JHExtras.h in Copy Files */,
+				BEB28DD01B52214E00098654 /* UIBarButtonItem+JHExtras.m in Copy Files */,
+				BEB28DD11B52214E00098654 /* UIButton+JHExtras.h in Copy Files */,
+				BEB28DD21B52214E00098654 /* UIButton+JHExtras.m in Copy Files */,
+				BEB28DD31B52214E00098654 /* UICollectionView+JHExtras.h in Copy Files */,
+				BEB28DD41B52214E00098654 /* UICollectionView+JHExtras.m in Copy Files */,
+				BEB28DD51B52214E00098654 /* UICollectionViewCell+JHExtras.h in Copy Files */,
+				BEB28DD61B52214E00098654 /* UICollectionViewCell+JHExtras.m in Copy Files */,
+				BEB28DD71B52214E00098654 /* UIColor+JHExtras.h in Copy Files */,
+				BEB28DD81B52214E00098654 /* UIColor+JHExtras.m in Copy Files */,
+				BEB28DD91B52214E00098654 /* UIImage+JHExtras.h in Copy Files */,
+				BEB28DDA1B52214E00098654 /* UIImage+JHExtras.m in Copy Files */,
+				BEB28DDB1B52214E00098654 /* UITableView+JHExtras.h in Copy Files */,
+				BEB28DDC1B52214E00098654 /* UITableView+JHExtras.m in Copy Files */,
+				BEB28DDD1B52214E00098654 /* UITableViewCell+JHExtras.h in Copy Files */,
+				BEB28DDE1B52214E00098654 /* UITableViewCell+JHExtras.m in Copy Files */,
+				BEB28DDF1B52214E00098654 /* UIView+JHExtras.h in Copy Files */,
+				BEB28DE01B52214E00098654 /* UIView+JHExtras.m in Copy Files */,
+				BEB28DE11B52214E00098654 /* JHFormCell.h in Copy Files */,
+				BEB28DE21B52214E00098654 /* JHFormCell.m in Copy Files */,
+				BEB28DE31B52214E00098654 /* JHFormDateCell.h in Copy Files */,
+				BEB28DE41B52214E00098654 /* JHFormDateCell.m in Copy Files */,
+				BEB28DE51B52214E00098654 /* JHFormField.h in Copy Files */,
+				BEB28DE61B52214E00098654 /* JHFormField.m in Copy Files */,
+				BEB28DE71B52214E00098654 /* JHFormOptionsCell.h in Copy Files */,
+				BEB28DE81B52214E00098654 /* JHFormOptionsCell.m in Copy Files */,
+				BEB28DE91B52214E00098654 /* JHFormSwitchCell.h in Copy Files */,
+				BEB28DEA1B52214E00098654 /* JHFormSwitchCell.m in Copy Files */,
+				BEB28DEB1B52214E00098654 /* JHFormTextCell.h in Copy Files */,
+				BEB28DEC1B52214E00098654 /* JHFormTextCell.m in Copy Files */,
+				BEB28DED1B52214E00098654 /* JHFormViewController.h in Copy Files */,
+				BEB28DEE1B52214E00098654 /* JHFormViewController.m in Copy Files */,
+				BEB28DEF1B52214E00098654 /* JHMath.h in Copy Files */,
+				BEB28DF01B52214E00098654 /* JHMath.m in Copy Files */,
+				BEB28DF11B52214E00098654 /* JHiOSAdditions.h in Copy Files */,
+				BEB28DF21B52214E00098654 /* JHSwitchCell.h in Copy Files */,
+				BEB28DF31B52214E00098654 /* JHSwitchCell.m in Copy Files */,
+				BEB28DF41B52214E00098654 /* JHCollectionViewController.h in Copy Files */,
+				BEB28DF51B52214E00098654 /* JHCollectionViewController.m in Copy Files */,
+				BEB28DF61B52214E00098654 /* JHMoviePlayerViewController.h in Copy Files */,
+				BEB28DF71B52214E00098654 /* JHMoviePlayerViewController.m in Copy Files */,
+				BEB28DFA1B52214E00098654 /* JHTableViewController.h in Copy Files */,
+				BEB28DFB1B52214E00098654 /* JHTableViewController.m in Copy Files */,
+				BEB28DFC1B52214E00098654 /* JHViewController.h in Copy Files */,
+				BEB28DFD1B52214E00098654 /* JHViewController.m in Copy Files */,
+				BEB28DFE1B52214E00098654 /* PRPAlertView.h in Copy Files */,
+				BEB28DFF1B52214E00098654 /* PRPAlertView.m in Copy Files */,
+				BEB28E001B52214E00098654 /* JHBeSocial.h in Copy Files */,
+				BEB28E011B52214F00098654 /* JHBeSocial.m in Copy Files */,
+				BEB28E021B52214F00098654 /* JHSingleton.h in Copy Files */,
+				BEB28E031B52214F00098654 /* JHSingleton.m in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE4BD7E01B66BC9D009919FF /* JHDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDataModel.h; sourceTree = "<group>"; };
+		BE4BD7E11B66BC9D009919FF /* JHDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDataModel.m; sourceTree = "<group>"; };
+		BE4BD7E41B66BCD3009919FF /* AutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCoding.h; sourceTree = "<group>"; };
+		BE4BD7E51B66BCD3009919FF /* AutoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCoding.m; sourceTree = "<group>"; };
+		BE4BD7ED1B66BDDB009919FF /* TMCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCache.h; sourceTree = "<group>"; };
+		BE4BD7EE1B66BDDB009919FF /* TMCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMCache.m; sourceTree = "<group>"; };
+		BE4BD7EF1B66BDDB009919FF /* TMCacheBackgroundTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCacheBackgroundTaskManager.h; sourceTree = "<group>"; };
+		BE4BD7F01B66BDDB009919FF /* TMDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDiskCache.h; sourceTree = "<group>"; };
+		BE4BD7F11B66BDDB009919FF /* TMDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDiskCache.m; sourceTree = "<group>"; };
+		BE4BD7F21B66BDDB009919FF /* TMMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMemoryCache.h; sourceTree = "<group>"; };
+		BE4BD7F31B66BDDB009919FF /* TMMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMemoryCache.m; sourceTree = "<group>"; };
 		BEB28C801B521CA900098654 /* libJHStandardLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJHStandardLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEB28C831B521CA900098654 /* JHStandardLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHStandardLib.h; sourceTree = "<group>"; };
-		BEB28C851B521CA900098654 /* JHStandardLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHStandardLib.m; sourceTree = "<group>"; };
 		BEB28C8B1B521CA900098654 /* JHStandardLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHStandardLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB28C911B521CA900098654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEB28D211B521E2600098654 /* JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHExtras.h; sourceTree = "<group>"; };
+		BEB28D221B521E2600098654 /* NSAttributedString+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+JHExtras.h"; sourceTree = "<group>"; };
+		BEB28D231B521E2600098654 /* NSAttributedString+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+JHExtras.m"; sourceTree = "<group>"; };
+		BEB28D241B521E2600098654 /* NSDate+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JHExtras.h"; sourceTree = "<group>"; };
+		BEB28D251B521E2600098654 /* NSDate+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JHExtras.m"; sourceTree = "<group>"; };
+		BEB28D261B521E2600098654 /* NSMutableArray+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+JHExtras.h"; sourceTree = "<group>"; };
+		BEB28D271B521E2600098654 /* NSMutableArray+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+JHExtras.m"; sourceTree = "<group>"; };
+		BEB28D281B521E2600098654 /* NSObject+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JHExtras.h"; sourceTree = "<group>"; };
+		BEB28D291B521E2600098654 /* NSObject+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JHExtras.m"; sourceTree = "<group>"; };
+		BEB28D2A1B521E2600098654 /* NSString+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JHExtras.h"; sourceTree = "<group>"; };
+		BEB28D2B1B521E2600098654 /* NSString+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JHExtras.m"; sourceTree = "<group>"; };
+		BEB28D2C1B521E2600098654 /* NSUserDefaults+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+JHExtras.h"; sourceTree = "<group>"; };
+		BEB28D2D1B521E2600098654 /* NSUserDefaults+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+JHExtras.m"; sourceTree = "<group>"; };
+		BEB28D2E1B521E2600098654 /* UIApplication+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+JHExtras.h"; sourceTree = "<group>"; };
+		BEB28D2F1B521E2600098654 /* UIApplication+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JHExtras.m"; sourceTree = "<group>"; };
+		BEB28D301B521E2600098654 /* UIBarButtonItem+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JHExtras.h"; sourceTree = "<group>"; };
+		BEB28D311B521E2600098654 /* UIBarButtonItem+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JHExtras.m"; sourceTree = "<group>"; };
+		BEB28D321B521E2600098654 /* UIButton+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JHExtras.h"; sourceTree = "<group>"; };
+		BEB28D331B521E2600098654 /* UIButton+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JHExtras.m"; sourceTree = "<group>"; };
+		BEB28D341B521E2600098654 /* UICollectionView+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+JHExtras.h"; sourceTree = "<group>"; };
+		BEB28D351B521E2600098654 /* UICollectionView+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+JHExtras.m"; sourceTree = "<group>"; };
+		BEB28D361B521E2600098654 /* UICollectionViewCell+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+JHExtras.h"; sourceTree = "<group>"; };
+		BEB28D371B521E2600098654 /* UICollectionViewCell+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+JHExtras.m"; sourceTree = "<group>"; };
+		BEB28D381B521E2600098654 /* UIColor+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JHExtras.h"; sourceTree = "<group>"; };
+		BEB28D391B521E2600098654 /* UIColor+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JHExtras.m"; sourceTree = "<group>"; };
+		BEB28D3A1B521E2600098654 /* UIImage+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JHExtras.h"; sourceTree = "<group>"; };
+		BEB28D3B1B521E2600098654 /* UIImage+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JHExtras.m"; sourceTree = "<group>"; };
+		BEB28D3E1B521E2600098654 /* UITableView+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+JHExtras.h"; sourceTree = "<group>"; };
+		BEB28D3F1B521E2600098654 /* UITableView+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+JHExtras.m"; sourceTree = "<group>"; };
+		BEB28D401B521E2600098654 /* UITableViewCell+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+JHExtras.h"; sourceTree = "<group>"; };
+		BEB28D411B521E2600098654 /* UITableViewCell+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+JHExtras.m"; sourceTree = "<group>"; };
+		BEB28D421B521E2600098654 /* UIView+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JHExtras.h"; sourceTree = "<group>"; };
+		BEB28D431B521E2600098654 /* UIView+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JHExtras.m"; sourceTree = "<group>"; };
+		BEB28D451B521E2600098654 /* JHFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormCell.h; sourceTree = "<group>"; };
+		BEB28D461B521E2600098654 /* JHFormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormCell.m; sourceTree = "<group>"; };
+		BEB28D471B521E2600098654 /* JHFormDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormDateCell.h; sourceTree = "<group>"; };
+		BEB28D481B521E2600098654 /* JHFormDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormDateCell.m; sourceTree = "<group>"; };
+		BEB28D491B521E2600098654 /* JHFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormField.h; sourceTree = "<group>"; };
+		BEB28D4A1B521E2600098654 /* JHFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormField.m; sourceTree = "<group>"; };
+		BEB28D4B1B521E2600098654 /* JHFormOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormOptionsCell.h; sourceTree = "<group>"; };
+		BEB28D4C1B521E2600098654 /* JHFormOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormOptionsCell.m; sourceTree = "<group>"; };
+		BEB28D4D1B521E2600098654 /* JHFormSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormSwitchCell.h; sourceTree = "<group>"; };
+		BEB28D4E1B521E2600098654 /* JHFormSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormSwitchCell.m; sourceTree = "<group>"; };
+		BEB28D4F1B521E2600098654 /* JHFormTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormTextCell.h; sourceTree = "<group>"; };
+		BEB28D501B521E2600098654 /* JHFormTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormTextCell.m; sourceTree = "<group>"; };
+		BEB28D511B521E2600098654 /* JHFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormViewController.h; sourceTree = "<group>"; };
+		BEB28D521B521E2600098654 /* JHFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormViewController.m; sourceTree = "<group>"; };
+		BEB28D541B521E2600098654 /* JHMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMath.h; sourceTree = "<group>"; };
+		BEB28D551B521E2600098654 /* JHMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMath.m; sourceTree = "<group>"; };
+		BEB28D561B521E2600098654 /* JHiOSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHiOSAdditions.h; sourceTree = "<group>"; };
+		BEB28D581B521E2600098654 /* JHSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSwitchCell.h; sourceTree = "<group>"; };
+		BEB28D591B521E2600098654 /* JHSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSwitchCell.m; sourceTree = "<group>"; };
+		BEB28D5B1B521E2600098654 /* JHCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCollectionViewController.h; sourceTree = "<group>"; };
+		BEB28D5C1B521E2600098654 /* JHCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCollectionViewController.m; sourceTree = "<group>"; };
+		BEB28D5D1B521E2600098654 /* JHMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMoviePlayerViewController.h; sourceTree = "<group>"; };
+		BEB28D5E1B521E2600098654 /* JHMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMoviePlayerViewController.m; sourceTree = "<group>"; };
+		BEB28D611B521E2600098654 /* JHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableViewController.h; sourceTree = "<group>"; };
+		BEB28D621B521E2600098654 /* JHTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableViewController.m; sourceTree = "<group>"; };
+		BEB28D631B521E2600098654 /* JHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHViewController.h; sourceTree = "<group>"; };
+		BEB28D641B521E2600098654 /* JHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHViewController.m; sourceTree = "<group>"; };
+		BEB28D651B521E2600098654 /* PRPAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPAlertView.h; sourceTree = "<group>"; };
+		BEB28D661B521E2600098654 /* PRPAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRPAlertView.m; sourceTree = "<group>"; };
+		BEB28D681B521E2600098654 /* JHBeSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHBeSocial.h; sourceTree = "<group>"; };
+		BEB28D691B521E2600098654 /* JHBeSocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHBeSocial.m; sourceTree = "<group>"; };
+		BEB28D6A1B521E2600098654 /* JHSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSingleton.h; sourceTree = "<group>"; };
+		BEB28D6B1B521E2600098654 /* JHSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSingleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +337,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE4BD7DF1B66BC40009919FF /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				BE4BD7E01B66BC9D009919FF /* JHDataModel.h */,
+				BE4BD7E11B66BC9D009919FF /* JHDataModel.m */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		BE4BD7E31B66BCBB009919FF /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				BE4BD7E41B66BCD3009919FF /* AutoCoding.h */,
+				BE4BD7E51B66BCD3009919FF /* AutoCoding.m */,
+				BE4BD7EC1B66BDDB009919FF /* TMCache */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		BE4BD7EC1B66BDDB009919FF /* TMCache */ = {
+			isa = PBXGroup;
+			children = (
+				BE4BD7ED1B66BDDB009919FF /* TMCache.h */,
+				BE4BD7EE1B66BDDB009919FF /* TMCache.m */,
+				BE4BD7EF1B66BDDB009919FF /* TMCacheBackgroundTaskManager.h */,
+				BE4BD7F01B66BDDB009919FF /* TMDiskCache.h */,
+				BE4BD7F11B66BDDB009919FF /* TMDiskCache.m */,
+				BE4BD7F21B66BDDB009919FF /* TMMemoryCache.h */,
+				BE4BD7F31B66BDDB009919FF /* TMMemoryCache.m */,
+			);
+			path = TMCache;
+			sourceTree = "<group>";
+		};
 		BEB28C771B521CA900098654 = {
 			isa = PBXGroup;
 			children = (
@@ -83,8 +391,8 @@
 		BEB28C821B521CA900098654 /* JHStandardLib */ = {
 			isa = PBXGroup;
 			children = (
-				BEB28C831B521CA900098654 /* JHStandardLib.h */,
-				BEB28C851B521CA900098654 /* JHStandardLib.m */,
+				BEB28D1F1B521E2600098654 /* JHiOSAdditions */,
+				BE4BD7E31B66BCBB009919FF /* ThirdParty */,
 			);
 			path = JHStandardLib;
 			sourceTree = "<group>";
@@ -105,6 +413,128 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BEB28D1F1B521E2600098654 /* JHiOSAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				BEB28D201B521E2600098654 /* Categories */,
+				BE4BD7DF1B66BC40009919FF /* DataAccess */,
+				BEB28D441B521E2600098654 /* Forms */,
+				BEB28D531B521E2600098654 /* Helpers */,
+				BEB28D561B521E2600098654 /* JHiOSAdditions.h */,
+				BEB28D571B521E2600098654 /* TableViewCells */,
+				BEB28D5A1B521E2600098654 /* UI */,
+				BEB28D671B521E2600098654 /* Utility */,
+			);
+			path = JHiOSAdditions;
+			sourceTree = "<group>";
+		};
+		BEB28D201B521E2600098654 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				BEB28D211B521E2600098654 /* JHExtras.h */,
+				BEB28D221B521E2600098654 /* NSAttributedString+JHExtras.h */,
+				BEB28D231B521E2600098654 /* NSAttributedString+JHExtras.m */,
+				BEB28D241B521E2600098654 /* NSDate+JHExtras.h */,
+				BEB28D251B521E2600098654 /* NSDate+JHExtras.m */,
+				BEB28D261B521E2600098654 /* NSMutableArray+JHExtras.h */,
+				BEB28D271B521E2600098654 /* NSMutableArray+JHExtras.m */,
+				BEB28D281B521E2600098654 /* NSObject+JHExtras.h */,
+				BEB28D291B521E2600098654 /* NSObject+JHExtras.m */,
+				BEB28D2A1B521E2600098654 /* NSString+JHExtras.h */,
+				BEB28D2B1B521E2600098654 /* NSString+JHExtras.m */,
+				BEB28D2C1B521E2600098654 /* NSUserDefaults+JHExtras.h */,
+				BEB28D2D1B521E2600098654 /* NSUserDefaults+JHExtras.m */,
+				BEB28D2E1B521E2600098654 /* UIApplication+JHExtras.h */,
+				BEB28D2F1B521E2600098654 /* UIApplication+JHExtras.m */,
+				BEB28D301B521E2600098654 /* UIBarButtonItem+JHExtras.h */,
+				BEB28D311B521E2600098654 /* UIBarButtonItem+JHExtras.m */,
+				BEB28D321B521E2600098654 /* UIButton+JHExtras.h */,
+				BEB28D331B521E2600098654 /* UIButton+JHExtras.m */,
+				BEB28D341B521E2600098654 /* UICollectionView+JHExtras.h */,
+				BEB28D351B521E2600098654 /* UICollectionView+JHExtras.m */,
+				BEB28D361B521E2600098654 /* UICollectionViewCell+JHExtras.h */,
+				BEB28D371B521E2600098654 /* UICollectionViewCell+JHExtras.m */,
+				BEB28D381B521E2600098654 /* UIColor+JHExtras.h */,
+				BEB28D391B521E2600098654 /* UIColor+JHExtras.m */,
+				BEB28D3A1B521E2600098654 /* UIImage+JHExtras.h */,
+				BEB28D3B1B521E2600098654 /* UIImage+JHExtras.m */,
+				BEB28D3E1B521E2600098654 /* UITableView+JHExtras.h */,
+				BEB28D3F1B521E2600098654 /* UITableView+JHExtras.m */,
+				BEB28D401B521E2600098654 /* UITableViewCell+JHExtras.h */,
+				BEB28D411B521E2600098654 /* UITableViewCell+JHExtras.m */,
+				BEB28D421B521E2600098654 /* UIView+JHExtras.h */,
+				BEB28D431B521E2600098654 /* UIView+JHExtras.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		BEB28D441B521E2600098654 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				BEB28D451B521E2600098654 /* JHFormCell.h */,
+				BEB28D461B521E2600098654 /* JHFormCell.m */,
+				BEB28D471B521E2600098654 /* JHFormDateCell.h */,
+				BEB28D481B521E2600098654 /* JHFormDateCell.m */,
+				BEB28D491B521E2600098654 /* JHFormField.h */,
+				BEB28D4A1B521E2600098654 /* JHFormField.m */,
+				BEB28D4B1B521E2600098654 /* JHFormOptionsCell.h */,
+				BEB28D4C1B521E2600098654 /* JHFormOptionsCell.m */,
+				BEB28D4D1B521E2600098654 /* JHFormSwitchCell.h */,
+				BEB28D4E1B521E2600098654 /* JHFormSwitchCell.m */,
+				BEB28D4F1B521E2600098654 /* JHFormTextCell.h */,
+				BEB28D501B521E2600098654 /* JHFormTextCell.m */,
+				BEB28D511B521E2600098654 /* JHFormViewController.h */,
+				BEB28D521B521E2600098654 /* JHFormViewController.m */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
+		BEB28D531B521E2600098654 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BEB28D541B521E2600098654 /* JHMath.h */,
+				BEB28D551B521E2600098654 /* JHMath.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BEB28D571B521E2600098654 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				BEB28D581B521E2600098654 /* JHSwitchCell.h */,
+				BEB28D591B521E2600098654 /* JHSwitchCell.m */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		BEB28D5A1B521E2600098654 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BEB28D5B1B521E2600098654 /* JHCollectionViewController.h */,
+				BEB28D5C1B521E2600098654 /* JHCollectionViewController.m */,
+				BEB28D5D1B521E2600098654 /* JHMoviePlayerViewController.h */,
+				BEB28D5E1B521E2600098654 /* JHMoviePlayerViewController.m */,
+				BEB28D611B521E2600098654 /* JHTableViewController.h */,
+				BEB28D621B521E2600098654 /* JHTableViewController.m */,
+				BEB28D631B521E2600098654 /* JHViewController.h */,
+				BEB28D641B521E2600098654 /* JHViewController.m */,
+				BEB28D651B521E2600098654 /* PRPAlertView.h */,
+				BEB28D661B521E2600098654 /* PRPAlertView.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BEB28D671B521E2600098654 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BEB28D681B521E2600098654 /* JHBeSocial.h */,
+				BEB28D691B521E2600098654 /* JHBeSocial.m */,
+				BEB28D6A1B521E2600098654 /* JHSingleton.h */,
+				BEB28D6B1B521E2600098654 /* JHSingleton.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,7 +544,7 @@
 			buildPhases = (
 				BEB28C7C1B521CA900098654 /* Sources */,
 				BEB28C7D1B521CA900098654 /* Frameworks */,
-				BEB28C7E1B521CA900098654 /* CopyFiles */,
+				BEB28C7E1B521CA900098654 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -193,7 +623,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEB28C861B521CA900098654 /* JHStandardLib.m in Sources */,
+				BEB28D801B521E2600098654 /* UICollectionViewCell+JHExtras.m in Sources */,
+				BEB28DAC1B521E2600098654 /* JHBeSocial.m in Sources */,
+				BEB28D761B521E2600098654 /* NSUserDefaults+JHExtras.m in Sources */,
+				BEB28D841B521E2600098654 /* UIImage+JHExtras.m in Sources */,
+				BE4BD7E61B66BCD3009919FF /* AutoCoding.m in Sources */,
+				BEB28D881B521E2600098654 /* UITableView+JHExtras.m in Sources */,
+				BEB28D6C1B521E2600098654 /* NSAttributedString+JHExtras.m in Sources */,
+				BEB28D8C1B521E2600098654 /* UIView+JHExtras.m in Sources */,
+				BEB28D701B521E2600098654 /* NSMutableArray+JHExtras.m in Sources */,
+				BEB28D721B521E2600098654 /* NSObject+JHExtras.m in Sources */,
+				BEB28DA61B521E2600098654 /* JHTableViewController.m in Sources */,
+				BEB28D7C1B521E2600098654 /* UIButton+JHExtras.m in Sources */,
+				BEB28D9E1B521E2600098654 /* JHSwitchCell.m in Sources */,
+				BEB28D821B521E2600098654 /* UIColor+JHExtras.m in Sources */,
+				BEB28DAE1B521E2600098654 /* JHSingleton.m in Sources */,
+				BEB28DAA1B521E2600098654 /* PRPAlertView.m in Sources */,
+				BEB28D8E1B521E2600098654 /* JHFormCell.m in Sources */,
+				BEB28DA81B521E2600098654 /* JHViewController.m in Sources */,
+				BEB28D8A1B521E2600098654 /* UITableViewCell+JHExtras.m in Sources */,
+				BEB28DA21B521E2600098654 /* JHMoviePlayerViewController.m in Sources */,
+				BEB28D6E1B521E2600098654 /* NSDate+JHExtras.m in Sources */,
+				BEB28D741B521E2600098654 /* NSString+JHExtras.m in Sources */,
+				BEB28D781B521E2600098654 /* UIApplication+JHExtras.m in Sources */,
+				BEB28DA01B521E2600098654 /* JHCollectionViewController.m in Sources */,
+				BEB28D7A1B521E2600098654 /* UIBarButtonItem+JHExtras.m in Sources */,
+				BEB28D961B521E2600098654 /* JHFormSwitchCell.m in Sources */,
+				BEB28D7E1B521E2600098654 /* UICollectionView+JHExtras.m in Sources */,
+				BEB28D921B521E2600098654 /* JHFormField.m in Sources */,
+				BEB28D981B521E2600098654 /* JHFormTextCell.m in Sources */,
+				BEB28D901B521E2600098654 /* JHFormDateCell.m in Sources */,
+				BEB28D9A1B521E2600098654 /* JHFormViewController.m in Sources */,
+				BEB28D941B521E2600098654 /* JHFormOptionsCell.m in Sources */,
+				BEB28D9C1B521E2600098654 /* JHMath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +663,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB28D811B521E2600098654 /* UICollectionViewCell+JHExtras.m in Sources */,
+				BE4BD7F41B66BDDB009919FF /* TMCache.m in Sources */,
+				BEB28DAD1B521E2600098654 /* JHBeSocial.m in Sources */,
+				BEB28D771B521E2600098654 /* NSUserDefaults+JHExtras.m in Sources */,
+				BEB28D851B521E2600098654 /* UIImage+JHExtras.m in Sources */,
+				BEB28D891B521E2600098654 /* UITableView+JHExtras.m in Sources */,
+				BEB28D6D1B521E2600098654 /* NSAttributedString+JHExtras.m in Sources */,
+				BEB28D8D1B521E2600098654 /* UIView+JHExtras.m in Sources */,
+				BEB28D711B521E2600098654 /* NSMutableArray+JHExtras.m in Sources */,
+				BEB28D731B521E2600098654 /* NSObject+JHExtras.m in Sources */,
+				BEB28DA71B521E2600098654 /* JHTableViewController.m in Sources */,
+				BE4BD7F61B66BDDB009919FF /* TMMemoryCache.m in Sources */,
+				BEB28D7D1B521E2600098654 /* UIButton+JHExtras.m in Sources */,
+				BEB28D9F1B521E2600098654 /* JHSwitchCell.m in Sources */,
+				BEB28D831B521E2600098654 /* UIColor+JHExtras.m in Sources */,
+				BE4BD7F51B66BDDB009919FF /* TMDiskCache.m in Sources */,
+				BEB28DAF1B521E2600098654 /* JHSingleton.m in Sources */,
+				BEB28DAB1B521E2600098654 /* PRPAlertView.m in Sources */,
+				BEB28D8F1B521E2600098654 /* JHFormCell.m in Sources */,
+				BEB28DA91B521E2600098654 /* JHViewController.m in Sources */,
+				BEB28D8B1B521E2600098654 /* UITableViewCell+JHExtras.m in Sources */,
+				BEB28DA31B521E2600098654 /* JHMoviePlayerViewController.m in Sources */,
+				BEB28D6F1B521E2600098654 /* NSDate+JHExtras.m in Sources */,
+				BEB28D751B521E2600098654 /* NSString+JHExtras.m in Sources */,
+				BEB28D791B521E2600098654 /* UIApplication+JHExtras.m in Sources */,
+				BEB28DA11B521E2600098654 /* JHCollectionViewController.m in Sources */,
+				BEB28D7B1B521E2600098654 /* UIBarButtonItem+JHExtras.m in Sources */,
+				BEB28D971B521E2600098654 /* JHFormSwitchCell.m in Sources */,
+				BEB28D7F1B521E2600098654 /* UICollectionView+JHExtras.m in Sources */,
+				BEB28D931B521E2600098654 /* JHFormField.m in Sources */,
+				BEB28D991B521E2600098654 /* JHFormTextCell.m in Sources */,
+				BEB28D911B521E2600098654 /* JHFormDateCell.m in Sources */,
+				BEB28D9B1B521E2600098654 /* JHFormViewController.m in Sources */,
+				BEB28D951B521E2600098654 /* JHFormOptionsCell.m in Sources */,
+				BEB28D9D1B521E2600098654 /* JHMath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +859,7 @@
 				BEB28C961B521CA900098654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEB28C971B521CA900098654 /* Build configuration list for PBXNativeTarget "JHStandardLibTests" */ = {
 			isa = XCConfigurationList;
@@ -370,6 +868,7 @@
 				BEB28C991B521CA900098654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
