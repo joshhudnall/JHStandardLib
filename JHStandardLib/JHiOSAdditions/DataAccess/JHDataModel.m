@@ -9,7 +9,7 @@
 #import "JHDataModel.h"
 #import "TMCache.h"
 #import <objc/runtime.h>
-#import <objc/Protocol.h>
+#import <objc/objc.h>
 
 #pragma mark NSString Utilities Declarations
 
@@ -26,6 +26,7 @@
 @implementation JHDataModel
 @dynamic keyMap;
 @dynamic dataTransformers;
+@dynamic jsonDictionary;
 
 + (NSArray *)objectsWithJSONArray:(NSArray *)jsonArray {
     NSMutableArray *array = [NSMutableArray array];
@@ -88,8 +89,50 @@
     return self;
 }
 
+- (NSDictionary *)jsonDictionary {
+    NSMutableDictionary * pairs = [NSMutableDictionary dictionary];
+
+    unsigned int numIvars = 0;
+    Ivar * ivars = class_copyIvarList([self class], &numIvars);
+    for (int i = 0; i < numIvars; ++i) {
+        Ivar ivar = ivars[i];
+        NSString * ivarName = [NSString stringWithCString:ivar_getName(ivar) encoding:NSUTF8StringEncoding];
+        id ivarValue = [self valueForKey:ivarName];
+        
+        if ([ivarValue isKindOfClass:[NSDate class]]) {
+            // Set up a date formatter
+            static NSString *_defaultFormat = nil;
+            static NSDateFormatter *_dateFormatter = nil;
+            static dispatch_once_t onceToken;
+            dispatch_once(&onceToken, ^{
+                _defaultFormat = @"y'-'MM'-'dd HH':'mm':'ss"; // Default to MySQL format
+                
+                _dateFormatter = [NSDateFormatter new];
+                _dateFormatter.timeZone = [NSTimeZone defaultTimeZone];
+                _dateFormatter.dateFormat = _defaultFormat;
+            });
+
+            ivarValue = [_dateFormatter stringFromDate:ivarValue];
+        }
+        
+        NSString *propertyName = [ivarName substringFromIndex:1];
+        NSString *jsonName = [(self.reverseKeyMap[propertyName] ?: propertyName) camelCaseToSnakeCase];
+        
+        pairs[jsonName] = ivarValue ?: [NSNull null];
+    }
+    free(ivars);
+    
+    return [pairs mutableCopy];
+}
+
 - (NSDictionary *)keyMap {
-    return nil;
+    return @{
+             @"id" : @"itemID",
+             };
+}
+
+- (NSDictionary *)reverseKeyMap {
+    return [NSDictionary dictionaryWithObjects:[self.keyMap allKeys] forKeys:[self.keyMap allValues]];
 }
 
 - (NSDictionary *)dataTransformers {

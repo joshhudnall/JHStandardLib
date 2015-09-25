@@ -16,24 +16,24 @@
     double ti = [origDate timeIntervalSinceDate:todayDate];
     ti = ti * -1;
     if(ti < 1) { // Use "now" if less than a second
-        return @"now";
+        return @"just now";
     } else if (ti < 60) { // Use "now" if less than a minute
-        return @"now";
+        return @"just now";
     } else if (ti < 60 * 60) { // Use minutes if under an hour
         int diff = round(ti / 60);
-        return [NSString stringWithFormat:@"%dm", diff];
+        return [NSString stringWithFormat:@"%d minutes ago", diff];
     } else if (ti < 60 * 60 * 24) { // Use hours if under a day
         int diff = round(ti / 60 / 60);
-        return[NSString stringWithFormat:@"%dh", diff];
+        return[NSString stringWithFormat:@"%d hours ago", diff];
     } else if (ti < 60 * 60 * 24 * 7) { // Use days if under a week
         int diff = round(ti / 60 / 60 / 24);
-        return[NSString stringWithFormat:@"%dd", diff];
+        return[NSString stringWithFormat:@"%d days ago", diff];
     } else if (ti < 60 * 60 * 24 * 7 * 52 * 2) { // Use weeks if under two years
         int diff = round(ti / 60 / 60 / 24 / 7);
-        return[NSString stringWithFormat:@"%dw", diff];
+        return[NSString stringWithFormat:@"%d weeks ago", diff];
     } else { // Use years for everything else
         int diff = round(ti / 60 / 60 / 24 / 7);
-        return[NSString stringWithFormat:@"%dy", diff];
+        return[NSString stringWithFormat:@"%d years ago", diff];
     }
 }
 

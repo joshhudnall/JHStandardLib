@@ -8,12 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "JHFormViewController.h"
-
-// Form Cells
-#import "JHFormSwitchCell.h"
-#import "JHFormTextCell.h"
-#import "JHFormOptionsCell.h"
-#import "JHFormDateCell.h"
+#import "UITableViewCell+JHExtras.h"
 
 
 static NSString *const JHFormCellTypeDefault = @"default";
@@ -46,6 +41,7 @@ static NSString *const JHFormCellTypeDateTime = @"datetime";
 @end
 
 @implementation JHFormViewController
+@dynamic formDescription;
 @synthesize fields = _fields;
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -85,9 +81,13 @@ static NSString *const JHFormCellTypeDateTime = @"datetime";
     }];
 }
 
+- (NSArray *)formDescription {
+    return nil;
+}
+
 - (NSArray *)fields {
     if ( ! _fields) {
-        _fields = @[
+        _fields = self.formDescription ?: @[
                     [JHFormField fieldWithDictionary:@{JHFormFieldType:@(JHFieldTypeText),
                                                        JHFormFieldKey:@"firstName",
                                                        JHFormFieldHeader:@"Personal Information",
@@ -270,8 +270,8 @@ static NSString *const JHFormCellTypeDateTime = @"datetime";
      */
     cell.field = field;
     
-    cell.placeholderColor = [UIColor blueColor];
-    cell.valueColor = [UIColor redColor];
+    cell.placeholderColor = [UIColor lightGrayColor];
+    cell.valueColor = [UIColor darkTextColor];
     
     return cell;
 }

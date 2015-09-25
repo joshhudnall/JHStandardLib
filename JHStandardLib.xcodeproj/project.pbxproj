@@ -12,6 +12,7 @@
 		BE4BD7F41B66BDDB009919FF /* TMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4BD7EE1B66BDDB009919FF /* TMCache.m */; };
 		BE4BD7F51B66BDDB009919FF /* TMDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4BD7F11B66BDDB009919FF /* TMDiskCache.m */; };
 		BE4BD7F61B66BDDB009919FF /* TMMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4BD7F31B66BDDB009919FF /* TMMemoryCache.m */; };
+		BE8ED86B1B9155E0005D349D /* JHDataModel.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BE4BD7E01B66BC9D009919FF /* JHDataModel.h */; };
 		BEB28C8C1B521CA900098654 /* libJHStandardLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB28C801B521CA900098654 /* libJHStandardLib.a */; };
 		BEB28D6C1B521E2600098654 /* NSAttributedString+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D231B521E2600098654 /* NSAttributedString+JHExtras.m */; };
 		BEB28D6D1B521E2600098654 /* NSAttributedString+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB28D231B521E2600098654 /* NSAttributedString+JHExtras.m */; };
@@ -143,6 +144,7 @@
 		BEB28E011B52214F00098654 /* JHBeSocial.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D691B521E2600098654 /* JHBeSocial.m */; };
 		BEB28E021B52214F00098654 /* JHSingleton.h in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D6A1B521E2600098654 /* JHSingleton.h */; };
 		BEB28E031B52214F00098654 /* JHSingleton.m in Copy Files */ = {isa = PBXBuildFile; fileRef = BEB28D6B1B521E2600098654 /* JHSingleton.m */; };
+		BEF72DCD1B92A3860058B46C /* JHDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4BD7E11B66BC9D009919FF /* JHDataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +164,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				BE8ED86B1B9155E0005D349D /* JHDataModel.h in Copy Files */,
 				BE4BD7E81B66BCF6009919FF /* AutoCoding.h in Copy Files */,
 				BEB28DC01B52214E00098654 /* JHExtras.h in Copy Files */,
 				BEB28DC11B52214E00098654 /* NSAttributedString+JHExtras.h in Copy Files */,
@@ -642,6 +645,7 @@
 				BEB28D8E1B521E2600098654 /* JHFormCell.m in Sources */,
 				BEB28DA81B521E2600098654 /* JHViewController.m in Sources */,
 				BEB28D8A1B521E2600098654 /* UITableViewCell+JHExtras.m in Sources */,
+				BEF72DCD1B92A3860058B46C /* JHDataModel.m in Sources */,
 				BEB28DA21B521E2600098654 /* JHMoviePlayerViewController.m in Sources */,
 				BEB28D6E1B521E2600098654 /* NSDate+JHExtras.m in Sources */,
 				BEB28D741B521E2600098654 /* NSString+JHExtras.m in Sources */,

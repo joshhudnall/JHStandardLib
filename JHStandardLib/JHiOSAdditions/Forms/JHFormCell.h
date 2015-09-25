@@ -33,7 +33,7 @@
 /**
  *  The field that the cell is displaying
  */
-@property (nonatomic, weak) JHFormField *field;
+@property (nonatomic, strong) JHFormField *field;
 
 /**
  *  The color of the value text in the cell

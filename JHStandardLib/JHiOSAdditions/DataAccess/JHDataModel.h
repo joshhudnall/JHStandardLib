@@ -17,12 +17,17 @@
 @interface JHDataModel : NSObject
 
 /**
- *  The raw JSON data used to hydrate this object
+ *  The raw JSON data used to hydrate this object, nil if model was created without a JSON object
  */
 @property (nonatomic, readonly) NSDictionary *rawData;
 
 /**
- *  A dictionary that maps JSON data to the object. Default implementation returns nil. Override getter to add custom mappings.
+ *  The computed JSON representation of the object
+ */
+@property (nonatomic, readonly) NSDictionary *jsonDictionary;
+
+/**
+ *  A dictionary that maps JSON data to the object. Default implementation returns a dictionary mapping JSON key "id" to Obj-C property itemID. Override getter to add custom mappings.
  */
 @property (nonatomic, readonly) NSDictionary *keyMap;
 
